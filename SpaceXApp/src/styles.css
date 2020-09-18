@@ -1,0 +1,6 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  padding: 20px;
+  background-color: silver;
+  /* margin-top: 60px; */
+}

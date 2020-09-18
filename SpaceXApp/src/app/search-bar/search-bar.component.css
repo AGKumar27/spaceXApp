@@ -1,0 +1,32 @@
+.customDiv {
+  margin: 3px;
+  min-height: 500px;
+  background-color: white;
+  text-align: center;
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+}
+hr {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  border: 2px solid thistle;
+  width: 70%;
+}
+
+.btnAlign {
+  margin-left: 15%;
+  margin-bottom: 5px;
+}
+.btn-success {
+  background-color: #0ef015;
+  font-size:12px;
+  color: black;
+}
+.btn-success:hover {
+  background-color: #4caf50;
+}
+
+.divFontSize{
+  font-size: 14px;
+}

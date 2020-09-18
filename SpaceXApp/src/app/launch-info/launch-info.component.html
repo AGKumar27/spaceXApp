@@ -1,0 +1,25 @@
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="recivedData.length === 0">
+  <strong>No data present...</strong>
+</div>
+
+<div class="row">
+  <div class="col-3">
+    <div class="grid-container">
+      <div class="card" *ngFor="let recivedata of recivedData, let i= index">
+        <div class="text-center">
+          <img class="card-img-top" [src]="recivedData[i].links.mission_patch" alt="{{recivedData[i].mission_name}}">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{recivedData[i].mission_name}} # {{recivedData[i].flight_number}}</h5>
+          <p><span>Mission Ids:</span> <span class="span1">{{recivedData[i].mission_id}}</span></p>
+          <p><span>Launch Year:</span> <span class="span1">{{recivedData[i].launch_year}}</span></p>
+          <p><span>Successful Launch:</span><span class="span1">{{recivedData[i].launch_success}}</span></p>
+          <p><span>Successful Landing:</span><span
+              class="span1">{{recivedData[i].rocket.first_stage.cores[0].land_success}}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="showLoadingIndicator" class="spinner"></div>

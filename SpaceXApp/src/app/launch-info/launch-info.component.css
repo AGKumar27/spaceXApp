@@ -1,0 +1,62 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.card {
+  width: 13rem;
+  margin: 10px;
+  padding: 10px
+}
+.card-img-top {
+  width: 80%;
+}
+.card-title{
+  color: blue;
+}
+.text-center{
+  background-color: lightgray;
+}
+span,p{
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+}
+.span1{
+  font-size: 10px;
+  color:rgb(112, 142, 241);
+}
+
+.spinner {
+  border: 16px solid silver;
+  border-top: 16px solid #337AB7;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 700ms linear infinite;
+  top:50%;
+  left:50%;
+  position: absolute;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(-360deg) }
+}
+
+@media(min-width:700px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+@media(min-width:1024px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media(min-width:1440px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}

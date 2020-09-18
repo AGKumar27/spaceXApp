@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "dist/SpaceXApp",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
